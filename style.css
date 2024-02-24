@@ -1,0 +1,566 @@
+@font-face {
+  font-family: neu;
+  src: 1font.ttf;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: neu;
+}
+
+body{
+  height: 490vw;
+  width: 100vw;
+  background-color: white;
+}
+
+#nav{
+  position: absolute;
+  height: 6vw;
+  width: 25vw;
+  z-index: 9;
+  right: 20vw;
+  top: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+
+#nav a {
+  position: relative;
+  display: inline-block;
+  font-size: 2vw;
+  color: #fff;
+  text-decoration: none;
+  padding: 1.5vw 3vw;
+  border-radius: 3vw;
+  border: .3vw solid white;
+}
+
+#page1{
+  position: absolute;
+  height: 85vw;
+  width: 100vw;
+  background-color: black;
+}
+
+#page1 img{
+  position: absolute;
+  height: 85vw;
+  width: 100vw;
+  object-fit: cover;
+}
+
+#half{
+  position: relative;
+  height: 40vw;
+  width: 100vw;
+  background-color: salmon;
+  top: 0;
+}
+
+#half img{
+  position: absolute;
+  height: 40vw;
+  object-fit: cover;
+  width: 100vw;
+}
+
+#box1{
+  position: absolute;
+  height: 37vw;
+  width: 37vw;
+  border: .4vw solid white;
+  border-radius: 100%;
+  top: 10vw;
+  left: 8vw;
+}
+
+#box1 img{
+  position: absolute;
+  height: 35vw;
+  width: 35vw;
+  object-fit: cover;
+  border-radius: 100%;
+  top: 1vw;
+  left: 1vw;
+}
+
+#enter{
+  position: absolute;
+  right: 13vw;
+  top: 13vw;
+  display: inline-block;
+  color: transparent;
+  font-size: 4vw;
+  -webkit-text-stroke: .3vw white;
+}
+
+#info{
+  position: absolute;
+  height: 10vh;
+  width: 35vw;
+  color: #ffffffb0;
+  display: flex;
+  top: 53vw;
+  left: 15vw;
+}
+
+#info h3{
+  position: relative;
+  font-size: 3vw;
+  top: -1vw;
+}
+
+#info button{
+  position: absolute;
+  width: 18vw;
+  height: 6vw;
+  left: -1vw;
+  top: 18vw;
+  border-radius: 10vw;
+  font-size: 2vw;
+  padding: 8px 22px;
+  color: black;
+  transition: all 0.5s ease;
+  background-color: cyan;
+  border: 2px solid cyan;
+  white-space: nowrap;
+  box-shadow: 0 0 2vw cyan, 0 0 5vw cyan;
+}
+
+#info button:hover {
+  box-shadow: 0 0 2vw cyan, 0 0 5vw cyan, 0 0 7vw cyan;
+}
+
+#page2{
+  position: absolute;
+  height: 80vw;
+  width: 100vw;
+  background-color: black;
+  top: 85vw;
+}
+
+#page2 img{
+  position: absolute;
+  height: 80vw;
+  width: 100vw;
+  object-fit: cover;
+}
+
+#page2 p{
+  position: absolute;
+  color: white;
+  font-size: 2.8vw;
+  bottom: 5.5vw;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+#page2 h1{
+  position: absolute;
+  color: white;
+  font-size: 8vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  top: 3vw;
+  left: 2vw;
+}
+
+#hero-shape{
+  position: absolute;
+  width: 47vw;
+  height: 47vw;
+  background-color: white;
+  border-radius: 50%;
+  right: 11vw;
+  left: 45vw;
+  top: 10vw;
+  filter:blur(3vw);
+  animation-name: anime1;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#hero1{
+  position: absolute;
+  right: 10vw;
+  top: 5vw;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  filter:blur(3vw);
+  animation-name: anime1;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#hero2{
+  position: absolute;
+  right: 10vw;
+  top: 5vw;
+  border-radius: 50%;
+  height: 30vw;
+  width: 30vw;
+  background-color: #0051e3;
+  filter:blur(3vw);
+  animation-name: anime1;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#hero3{
+  position: absolute;
+  right: 15vw;
+  top: 6vw;
+  border-radius: 50%;
+  height: 30vw;
+  width: 30vw;
+  background-color: #00dee3;
+  filter:blur(3vw);
+  animation-name: anime1;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes anime1 {
+  from{
+    transform: translate(-10%,10%);
+  }
+  to{
+    transform: translate(10%,-10%);
+  }
+}
+
+#page3 {
+  position: absolute;
+  height: 100vw;
+  width: 100vw;
+  background-color: black;
+  top: 164.8vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#page3 h1{
+  position: absolute;
+  font-size: 7vw;
+  color: white;
+  top: 7vw;
+}
+
+#icons{
+  position: absolute;
+  font-size: 13vw;
+  top: 27vw;
+  left: 24vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  letter-spacing: 10vw;
+}
+#icons .fa-html5 {
+  color: #f95323;
+  text-shadow: 0 0 10vw #f95323, 0 0 12vw #f95323, 0 0 20vw #f95323;
+}
+
+
+#icons .fa-css3-alt {
+  color: #0178cd;
+  text-shadow: 0 0 10vw #0178cd, 0 0 12vw #0178cd, 0 0 20vw #0178cd;
+}
+
+#icons .fa-js{
+  color: yellow;
+  text-shadow: 0 0 10vw yellow, 0 0 12vw yellow, 0 0 3vw yellow;
+}
+
+
+#square{
+  position: absolute;
+  height: 38vw;
+  width: 100vw;
+  bottom: 4.8vw;
+}
+
+#square1{
+  position: absolute;
+  height: 36vw;
+  width: 42vw;
+  left: 5.5vw;
+  background-color: #313131;
+}
+#square1 h3{
+  position: absolute;
+  font-size: 3vw;
+  color: white;
+  left: 1vw;
+  top: 2vw;
+}
+
+#square11{
+  position: absolute;
+  height: .8vw;
+  width: 42vw;
+  background-color: white;
+  left: 5.5vw;
+}
+
+#square111{
+  position: absolute;
+  height: .8vw;
+  width: 42vw;
+  background-color: white;
+  left: 5.5vw;
+  top: 36vw;
+}
+
+#square1 p{
+  position: absolute;
+  font-size: 3vw;
+  color: white;
+  top: 8vw;
+  left: 1vw;
+  display: flex;
+  text-align: left;
+}
+
+#square2{
+  position: absolute;
+  height: 36vw;
+  width: 42vw;
+  right: 5.5vw;
+  background-color: #313131;
+}
+
+#square2 h3{
+  position: absolute;
+  font-size: 3vw;
+  color: white;
+  left: 1vw;
+  top: 2vw;
+}
+
+#square2 p{
+  position: absolute;
+  font-size: 3vw;
+  color: white;
+  top: 8vw;
+  left: 1vw;
+  display: flex;
+  text-align: left;
+}
+
+#square22{
+  position: absolute;
+  height: .8vw;
+  width: 42vw;
+  background-color: white;
+  right: 5.5vw;
+}
+
+#square222{
+  position: absolute;
+  height: .8vw;
+  width: 42vw;
+  background-color: white;
+  right: 5.5vw;
+  top: 36vw;
+}
+
+
+#page4{
+  position: absolute;
+  height: 150vw;
+  width: 100vw;
+  background-color: black;
+  top: 264vw;
+}
+
+#sat1 img{
+  position: absolute;
+  height: 55vw;
+  width: 35vw;
+  object-fit: cover;
+  left: 8vw;
+  top: 15vw;
+}
+
+#sat2 img{
+  position: absolute;
+  height: 55vw;
+  width: 35vw;
+  object-fit: cover;
+  right: 8vw;
+  top: 24vw;
+}
+
+#sat3 img{
+  position: absolute;
+  height: 55vw;
+  width: 35vw;
+  object-fit: cover;
+  left: 8vw;
+  top: 80vw;
+}
+
+#sat4 img{
+  position: absolute;
+  height: 55vw;
+  width: 35vw;
+  object-fit: cover;
+  right: 8vw;
+  top: 90vw;
+}
+
+#nam{
+  position: absolute;
+  color: white;
+  font-size: 2vw;
+}
+
+#nam1 h1{
+  position: absolute;
+  top: 55vw;
+  white-space: nowrap;
+  left: 45vw;
+  color: transparent;
+  -webkit-text-stroke: .3vw white;
+}
+
+#nam2 h1{
+  position: absolute;
+  top: 13vw;
+  white-space: nowrap;
+  left: 31vw;
+  display: flex;
+  text-align: right;
+}
+
+#nam3 h1{
+  position: absolute;
+  top: 80vw;
+  white-space: nowrap;
+  left: 32vw;
+  display: flex;
+  text-align: right;
+}
+
+#nam4 h1{
+  position: absolute;
+  top: 125vw;
+  white-space: nowrap;
+  left: 45vw;
+  display: flex;
+  text-align: left;
+  color: transparent;
+  -webkit-text-stroke: .3vw white;
+}
+
+#footer{
+  position: fixed;
+  height: 76vw;
+  width: 100vw;
+  background-color: black;
+  color: white;
+  bottom: 0;
+  z-index: -1;
+}
+
+#footer h1{
+  position: absolute;
+  font-size: 18vw;
+  left: 7vw;
+  bottom: 20vw;
+}
+
+#move {
+  position: absolute;
+  width: 47vw;
+  height: 47vw;
+  background-color: orangered;
+  border-radius: 50%;
+  right: -5vw;
+  top: -2vw;
+  filter:blur(3vw);
+  animation-name: anime3;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#move1 {
+  position: absolute;
+  width: 47vw;
+  height: 47vw;
+  background-color: #36b6e5;
+  border-radius: 50%;
+  right: 65vw;
+  top: -2vw;
+  filter:blur(3vw);
+  animation-name: anime2;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#move2 {
+  position: absolute;
+  width: 47vw;
+  height: 47vw;
+  background-color: white;
+  border-radius: 50%;
+  right: 40vw;
+  top: 3vw;
+  filter:blur(3vw);
+  animation-name: anime1;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+#top11 {
+  position: absolute;
+  background-color: black;
+  height: 30vw;
+  width: 130vw;
+  filter: blur(4vw);
+  top: -7vw;
+  left: -5vw;
+}
+
+@keyframes anime2 {
+  from{
+    transform: translate(-10%,30%);
+  }
+  to{
+    transform: translate(30%,-10%);
+  }
+}
+
+@keyframes anime3 {
+  from{
+    transform: translate(10%,-10%);
+  }
+  to{
+    transform: translate(-10%,30%);
+  }
+}
